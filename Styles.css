@@ -1,0 +1,163 @@
+
+*{
+	font-family: Sans-Serif;
+}
+
+body {
+	margin-left: 400px;
+	margin-right: 340px;
+	border: 2px solid #CDCDCD;
+	padding: 10px;
+	box-shadow: 0 2px 10px #CDCDCD;
+	border-radius: 5px;
+
+}
+input{
+
+	width: 100px;
+	font-size: 15px;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    border: 2px solid #fff;
+}
+
+input#tt {
+	width: 440px;
+}
+ul{
+	list-style-type: none;
+	margin-left: -30px;
+}
+
+.close {
+	margin-top: 14px;
+	margin-right: 5px;
+    color: #fff;
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #F50057;
+}
+
+
+
+
+li{
+	margin-left: -10px;
+	margin-bottom: 2px;
+
+    border-radius: 5px;
+    width: 520px;
+    padding-left: 20px;
+
+}
+input#inp{
+	width: 375px;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+	font-size: 17px;
+	padding-left: 10px;
+}
+button#add_btn {
+	background: white;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+	padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 5px;
+}
+p{
+	font-size: 12px;
+	color: #969696;
+	position:absolute;
+	display:inline-block;
+	margin:-7px 0 0 10px;
+	background:#fff;
+	padding: 0 3px;
+}
+
+
+
+
+
+label {
+	top: -16px;
+	left: -10px;
+}
+
+
+
+
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label  {
+	display: inline-block;
+	position: relative;
+	padding-left: 20px;
+	background-color: #e145a3;
+	cursor: pointer;
+	
+}
+input[type="checkbox"]:not(:checked) + label:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border: 1px solid #CDCDCD;
+	border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 18px;
+	height: 18px;
+	background-color: #F50057;
+	border: 1px solid #CDCDCD;
+	border-radius: 2px;
+}
+/*Галочка*/
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 13px;
+    height: 7px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+}
+
+
+
+
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
